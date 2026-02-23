@@ -27,9 +27,9 @@ Content-Type: application/json
 {
   "type": "ACAO",
   "symbol": "BBAS3",
-  "quantity": 150,
-  "purchasePrice": 20.50,
-  "purchaseDate": "2025-08-05"
+  "quantity": 200,
+  "purchasePrice": 21.40,
+  "purchaseDate": "2025-08-31"
 }
 
 #### REMOVER UM ATIVO DA CARTEIRA
