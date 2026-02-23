@@ -1,0 +1,43 @@
+# CADASTRAR UM NOVO ATIVO NA CARTEIRA
+###
+POST http://localhost:3300/investments
+Content-Type: application/json
+
+{
+  "type": "ACAO",
+  "symbol": "BBAS3",
+  "quantity": 100,
+  "purchasePrice": 19.68,
+  "purchaseDate": "2025-07-31"
+}
+
+### LISTAR TODOS OS ATIVOS NA CARTEIRA
+###
+GET http://localhost:3300/investments
+
+### FILTRAR ATIVOS POR TIPO
+###
+GET http://localhost:3300/investments?type=ACAO
+
+### ATUALIZAR UM ATIVO
+###
+PUT http://localhost:3300/investments/{ID}
+Content-Type: application/json
+
+{
+  "type": "ACAO",
+  "symbol": "BBAS3",
+  "quantity": 150,
+  "purchasePrice": 20.50,
+  "purchaseDate": "2025-08-05"
+}
+
+#### REMOVER UM ATIVO DA CARTEIRA
+###
+DELETE http://localhost:3300/investments/{ID}
+
+
+### RESUMO DA CARTEIRA
+###
+GET http://localhost:3300/investments/summary
+
